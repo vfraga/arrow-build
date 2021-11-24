@@ -36,4 +36,5 @@ install:
 script:
 - pushd ..
 - git clone -b flight-sql https://github.com/rafael-telles/arrow
-- python arrow/dev/tasks/crossbow.py --queue-path $TRAVIS_BUILD_DIR --queue-remote https://github.com/$TRAVIS_REPO_SLUG submit --job-prefix nightly -g gandiva
+- pip install -e arrow/dev/archery[crossbow]
+- archery crossbow --queue-path $TRAVIS_BUILD_DIR --queue-remote https://github.com/$TRAVIS_REPO_SLUG submit java-jars --job-prefix nightly
