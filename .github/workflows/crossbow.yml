@@ -19,10 +19,7 @@
 # github comment reports!
 name: Crossbow
 
-on:
-  push:
-    branches:
-      - "*-github-*"
+on: [workflow_dispatch]
 
 jobs:
   package:
