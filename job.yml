@@ -1,0 +1,58 @@
+!Job
+target: !Target
+  head: d5cc2bc081b68701cf1485bc4a96bca207ca0698
+  email: travis@example.org
+  branch: flight-sql
+  remote: https://github.com/rafael-telles/arrow
+  version: 6.0.0.dev851
+  no_rc_version: 6.0.0.dev851
+  no_rc_semver_version: 6.0.0-dev851
+tasks:
+  java-jars: !Task
+    ci: github
+    template: java-jars/github.yml
+    artifacts:
+    - arrow-algorithm-6.0.0.dev851-tests.jar
+    - arrow-algorithm-6.0.0.dev851.jar
+    - arrow-avro-6.0.0.dev851-tests.jar
+    - arrow-avro-6.0.0.dev851.jar
+    - arrow-compression-6.0.0.dev851-tests.jar
+    - arrow-compression-6.0.0.dev851.jar
+    - arrow-dataset-6.0.0.dev851-tests.jar
+    - arrow-dataset-6.0.0.dev851.jar
+    - arrow-format-6.0.0.dev851-tests.jar
+    - arrow-format-6.0.0.dev851.jar
+    - arrow-gandiva-6.0.0.dev851-tests.jar
+    - arrow-gandiva-6.0.0.dev851.jar
+    - arrow-jdbc-6.0.0.dev851-tests.jar
+    - arrow-jdbc-6.0.0.dev851.jar
+    - arrow-memory-core-6.0.0.dev851-tests.jar
+    - arrow-memory-core-6.0.0.dev851.jar
+    - arrow-memory-netty-6.0.0.dev851-tests.jar
+    - arrow-memory-netty-6.0.0.dev851.jar
+    - arrow-memory-unsafe-6.0.0.dev851-tests.jar
+    - arrow-memory-unsafe-6.0.0.dev851.jar
+    - arrow-orc-6.0.0.dev851-tests.jar
+    - arrow-orc-6.0.0.dev851.jar
+    - arrow-performance-6.0.0.dev851-tests.jar
+    - arrow-performance-6.0.0.dev851.jar
+    - arrow-plasma-6.0.0.dev851-tests.jar
+    - arrow-plasma-6.0.0.dev851.jar
+    - arrow-tools-6.0.0.dev851-jar-with-dependencies.jar
+    - arrow-tools-6.0.0.dev851-tests.jar
+    - arrow-tools-6.0.0.dev851.jar
+    - arrow-vector-6.0.0.dev851-shade-format-flatbuffers.jar
+    - arrow-vector-6.0.0.dev851-tests.jar
+    - arrow-vector-6.0.0.dev851.jar
+    - benchmarks.jar
+    - flight-core-6.0.0.dev851-jar-with-dependencies.jar
+    - flight-core-6.0.0.dev851-shaded-ext.jar
+    - flight-core-6.0.0.dev851-shaded.jar
+    - flight-core-6.0.0.dev851-tests.jar
+    - flight-core-6.0.0.dev851.jar
+    - flight-grpc-6.0.0.dev851-tests.jar
+    params: {}
+    branch: nightly-958-github-java-jars
+    commit: a50bd029391c944ba287d7297166126862f3c516
+params: {}
+branch: nightly-958
