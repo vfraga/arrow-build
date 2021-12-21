@@ -1,0 +1,58 @@
+!Job
+target: !Target
+  head: 2c666d2097be1c0de343b05b05fbaa42c2d262c6
+  email: travis@example.org
+  branch: open-flight-jdbc-branch
+  remote: https://github.com/rafael-telles/arrow
+  version: 6.0.0.dev1948
+  no_rc_version: 6.0.0.dev1948
+  no_rc_semver_version: 6.0.0-dev1948
+tasks:
+  java-jars: !Task
+    ci: github
+    template: java-jars/github.yml
+    artifacts:
+    - arrow-algorithm-6.0.0.dev1948-tests.jar
+    - arrow-algorithm-6.0.0.dev1948.jar
+    - arrow-avro-6.0.0.dev1948-tests.jar
+    - arrow-avro-6.0.0.dev1948.jar
+    - arrow-compression-6.0.0.dev1948-tests.jar
+    - arrow-compression-6.0.0.dev1948.jar
+    - arrow-dataset-6.0.0.dev1948-tests.jar
+    - arrow-dataset-6.0.0.dev1948.jar
+    - arrow-format-6.0.0.dev1948-tests.jar
+    - arrow-format-6.0.0.dev1948.jar
+    - arrow-gandiva-6.0.0.dev1948-tests.jar
+    - arrow-gandiva-6.0.0.dev1948.jar
+    - arrow-jdbc-6.0.0.dev1948-tests.jar
+    - arrow-jdbc-6.0.0.dev1948.jar
+    - arrow-memory-core-6.0.0.dev1948-tests.jar
+    - arrow-memory-core-6.0.0.dev1948.jar
+    - arrow-memory-netty-6.0.0.dev1948-tests.jar
+    - arrow-memory-netty-6.0.0.dev1948.jar
+    - arrow-memory-unsafe-6.0.0.dev1948-tests.jar
+    - arrow-memory-unsafe-6.0.0.dev1948.jar
+    - arrow-orc-6.0.0.dev1948-tests.jar
+    - arrow-orc-6.0.0.dev1948.jar
+    - arrow-performance-6.0.0.dev1948-tests.jar
+    - arrow-performance-6.0.0.dev1948.jar
+    - arrow-plasma-6.0.0.dev1948-tests.jar
+    - arrow-plasma-6.0.0.dev1948.jar
+    - arrow-tools-6.0.0.dev1948-jar-with-dependencies.jar
+    - arrow-tools-6.0.0.dev1948-tests.jar
+    - arrow-tools-6.0.0.dev1948.jar
+    - arrow-vector-6.0.0.dev1948-shade-format-flatbuffers.jar
+    - arrow-vector-6.0.0.dev1948-tests.jar
+    - arrow-vector-6.0.0.dev1948.jar
+    - benchmarks.jar
+    - flight-core-6.0.0.dev1948-jar-with-dependencies.jar
+    - flight-core-6.0.0.dev1948-shaded-ext.jar
+    - flight-core-6.0.0.dev1948-shaded.jar
+    - flight-core-6.0.0.dev1948-tests.jar
+    - flight-core-6.0.0.dev1948.jar
+    - flight-grpc-6.0.0.dev1948-tests.jar
+    params: {}
+    branch: nightly-966-github-java-jars
+    commit: 6736f254aa0e2be994345cc6edcd72790e5c1760
+params: {}
+branch: nightly-966
