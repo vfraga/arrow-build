@@ -146,7 +146,6 @@ jobs:
         run: |
           set -e
           pushd arrow/java
-          mvn versions:set -DnewVersion=6.0.0.dev2311
           popd
           arrow/ci/scripts/java_full_build.sh \
             $GITHUB_WORKSPACE/arrow \
@@ -168,7 +167,6 @@ jobs:
           --sha nightly-968-github-java-jars \
           --tag nightly-968-github-java-jars \
           "arrow/java-dist/*.jar" \
-          "arrow/java-dist/*.pom" \
-          "arrow/java-dist/*.zip" 
+          "arrow/java-dist/*.pom" 
         env:
           CROSSBOW_GITHUB_TOKEN: ${{ secrets.CROSSBOW_GITHUB_TOKEN || secrets.GITHUB_TOKEN }}
