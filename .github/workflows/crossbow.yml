@@ -24,6 +24,7 @@ on:
     branches:
       - "*-github-*"
 
+# arrow_head: 2671d020ec13426e4d37a158eb4fa385334eb1ab
 
 jobs:
 
@@ -144,9 +145,6 @@ jobs:
       - name: Build Bundled Jar
         run: |
           set -e
-          pushd arrow/java
-          mvn versions:set -DnewVersion=6.0.0.dev2312
-          popd
           arrow/ci/scripts/java_full_build.sh \
             $GITHUB_WORKSPACE/arrow \
             $GITHUB_WORKSPACE/arrow/java-dist
