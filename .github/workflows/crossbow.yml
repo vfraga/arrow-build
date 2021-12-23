@@ -29,7 +29,7 @@ jobs:
 
   build-cpp-ubuntu:
     name: Build C++ Libs Ubuntu
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout Arrow
         uses: actions/checkout@v2
@@ -107,7 +107,7 @@ jobs:
 
   package-jars:
     name: Build Jar Files
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
     needs: [build-cpp-macos, build-cpp-ubuntu]
     steps:
       - name: Checkout Arrow
