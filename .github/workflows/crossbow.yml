@@ -107,7 +107,7 @@ jobs:
 
   package-jars:
     name: Build Jar Files
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-18.04
     needs: [build-cpp-macos, build-cpp-ubuntu]
     steps:
       - name: Checkout Arrow
