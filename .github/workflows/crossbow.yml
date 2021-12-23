@@ -144,9 +144,6 @@ jobs:
       - name: Build Bundled Jar
         run: |
           set -e
-          pushd arrow/java
-          mvn versions:set -DnewVersion=6.0.0.dev2315
-          popd
           arrow/ci/scripts/java_full_build.sh \
             $GITHUB_WORKSPACE/arrow \
             $GITHUB_WORKSPACE/arrow/java-dist
