@@ -2,7 +2,7 @@ branches:
   except:
   - "/.*win.*/"
 os: linux
-dist: focal
+dist: trusty
 language: generic
 before_install:
 - echo `pwd`
@@ -29,7 +29,6 @@ install:
     click \
     jira \
     toolz \
-    llvm \
     ruamel.yaml \
     setuptools_scm \
     github3.py \
