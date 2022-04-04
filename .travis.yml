@@ -35,6 +35,6 @@ install:
     python-gnupg
 script:
 - pushd ..
-- git clone -b open-flight-sql-branch https://github.com/rafael-telles/arrow
+- git clone -b parse-connection-string https://github.com/rafael-telles/arrow
 - pip install -e arrow/dev/archery[crossbow]
 - archery crossbow --queue-path $TRAVIS_BUILD_DIR --queue-remote https://github.com/$TRAVIS_REPO_SLUG submit java-jars --job-prefix nightly
