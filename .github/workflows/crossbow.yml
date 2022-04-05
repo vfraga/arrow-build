@@ -23,8 +23,6 @@ on:
   push:
     branches:
       - "*-github-*"
-      
-# ref: d1cd228d3d6da29e8a886b0a2e2f5b9262ac8348
 
 jobs:
 
